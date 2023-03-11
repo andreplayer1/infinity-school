@@ -1,0 +1,31 @@
+header{
+    background-color: #466875;
+    color: #94DBF7;
+}
+
+a{
+    color: #94DBF7;
+    padding: 20px;
+}
+
+li{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h1, h2{
+    background-color: #466875;
+    color: #94DBF7;
+    text-align: center;
+}
+
+form{
+    background-color: #94DBF7;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #DBEDF4;
+    background-color: #6A7275;
+}
