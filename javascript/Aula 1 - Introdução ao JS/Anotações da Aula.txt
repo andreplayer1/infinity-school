@@ -1,0 +1,18 @@
+Podemos adicionar JavaScript em 3 lugares.
+
+<head>
+    <script>
+        alert(“Javascript no head!”);
+    </script>
+    <script src="myScript.js"></script>
+</head>
+<body>
+    <script>
+        alert(“Javascript no body!”);
+    </script>
+</body>
+
+Variaveis
+
+let - Variavel Local
+var - Variavel Global
