@@ -43,6 +43,7 @@ header {
 }
 
 header > h1 {
+    background-position: center right;
     font-size: 2em;
     background-image: url("../image/pizza3.jpg");
     background-size: cover;
