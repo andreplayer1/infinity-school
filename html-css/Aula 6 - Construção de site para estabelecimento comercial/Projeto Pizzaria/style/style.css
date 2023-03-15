@@ -17,10 +17,10 @@ header > nav {
 nav a {
     min-width: 320px;
     max-width: 800px;
-    padding: 2px 40px 2px 40px;
+    padding: 2px 5px 2px 5px;
     color: rgb(81, 95, 60);
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
     transition: 0.5s;
     border-radius: 10px;
 }
