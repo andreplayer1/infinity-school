@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01</title>
+</head>
+<body>
+    <h1>Tamanho do numero</h1>
+
+    <form action="#" id="formulario1">
+
+        Digite: <input id="entrada" type="text">
+
+        <input type="button" value="Resposta" onclick="tamanhoNumero()">
+    </form>
+
+    <p id="resposta"></p>
+
+    <script>
+        function tamanhoNumero() {
+            formulario1 = document.forms['formulario1'];
+
+            valor = formulario1.elements.entrada.value;
+
+            if (valor < 10) {
+                resposta = "Numero pequeno"
+            } else {
+                resposta = "Numero Grande"
+            }
+            document.getElementById("resposta").innerHTML = resposta
+        }
+    </script>
+</body>
+</html>

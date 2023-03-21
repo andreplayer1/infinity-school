@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>
+        Condicionais
+    </h1>
+
+    <!--Entrada de dados com prompt: Crie uma variavel que vai receber a entrada (prompt).
+        Depois podemos usar document.getElement para colocar essa entrada em algum outro lugar, como numa ID por exemplo...
+
+    <p id="exemplo"></p>
+
+    <script>
+        var x = prompt("Entre com seu nome")
+        document.getElementById("exemplo").innerHTML = x
+        console.log(x)
+    </script>
+    -->
+
+    <!--Entrada de dados com <form>-->
+
+    <form action="#" id="formulario1">
+        
+    Digite: <input type="text" id="entrada"><br>
+
+    <input type="button" value="Executar" onclick="myFunction()"> <!--o type aqui pode ser por exemplo button, date, checkbox, etc. o value é basicamente o nome do button-->
+
+    
+    </form>
+
+    <p id="resposta"></p>
+
+    <script>
+        function myFunction() {
+            let frm = document.forms['formulario1'] /*Criei uma variavel que vai no Documento > <form> e pegar a ID formulario1*/
+
+            let entrada = frm.elements.entrada.value /*Essa variavel vai pegar o valor do input do formulario */
+
+            document.getElementById('resposta').innerHTML = entrada; /*Aqui vamos pegar o elemento pela id e substituir pelo value da entrada do usuario no formulario.*/
+        }
+
+    </script>
+    
+</body>
+</html>
