@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Aula 2 - Exercicio 2</h1>
+
+    <form action="#" id="formulario1">
+        Escreva algo: <input id="entrada" type="text">
+        <input type="button" value="Enviar" onclick="analise()">
+    </form>
+
+    <p id="resposta"></p>
+
+    <script>
+        function analise() {
+            let formulario = document.forms["formulario1"];
+
+            let texto = formulario.elements.entrada.value;
+
+            let analise = texto.length;
+
+            if (analise <= 20){
+                tamanho = "O texto é pequeno"
+            }else if (analise >= 21 && analise <= 30) {
+                tamanho = "O texto é médio"
+            }else if (analise >= 31 && analise <= 40) {
+                tamanho = "O texto é grande"
+            }else {
+                tamanho = "Não vou contar o tamanho."
+            }
+
+            document.getElementById("resposta").innerHTML = tamanho
+        }
+    </script>
+</body>
+</html>

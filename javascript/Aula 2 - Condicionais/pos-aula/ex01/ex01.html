@@ -10,24 +10,22 @@
     <h1>Tamanho do numero</h1>
 
     <form action="#" id="formulario1">
-
-        Digite: <input id="entrada" type="text">
-
-        <input type="button" value="Resposta" onclick="tamanhoNumero()">
+        Digite: <input type="text" id="entrada"><br>
+        <input type="button" value="Enviar" onclick="entradaDados()">
     </form>
 
     <p id="resposta"></p>
 
     <script>
-        function tamanhoNumero() {
-            formulario1 = document.forms['formulario1'];
+        function entradaDados() {
+            let formulario = document.forms["formulario1"];
 
-            valor = formulario1.elements.entrada.value;
+            let entrada = formulario.elements.entrada.value;
 
-            if (valor <= 10) {
-                resposta = "Numero pequeno"
+            if (entrada < 10){
+                resposta = "Número Pequeno"
             } else {
-                resposta = "Numero Grande"
+                resposta = "Número Grande"
             }
             document.getElementById("resposta").innerHTML = resposta
         }
