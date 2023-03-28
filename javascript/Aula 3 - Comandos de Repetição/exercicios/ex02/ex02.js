@@ -1,13 +1,21 @@
-let numeroDigitado = prompt ("Digite um numero: ");
-let quantidadeDivisores = 0;
+let numeroDigitado = prompt ('Digite um numero: ');
+let quantidadeDeDivisores = 0;
+let resposta = "";
+let i = 1;
 
-for(let i=1 ; i<=numeroDigitado ; i++){
-    quantidadeDivisores = 0;
-    for(let j=1; i<=i ; j++){
-        if(i%j ===0)
-        quantidadeDivisores++;
+while (i <= numeroDigitado) {
+    if (numeroDigitado % i === 0) {
+        quantidadeDeDivisores ++;
     }
+        if (quantidadeDeDivisores ===2){
+        resposta += `${i} é primo <br>`;
+        }else {
+        resposta +=`${i}Não é primo <br>`;
+        }
+    i++
 }
-if(quantidadeDivisores===2){
-    console.log(i, " é primo");
-}
+
+console.log(`Numero inicial ${i}`)
+console.log(`Numero digitado ${numeroDigitado}`)
+console.log(`Quantidade de divisores ${quantidadeDeDivisores}`)
+console.log(resposta)
