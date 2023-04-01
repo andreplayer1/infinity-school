@@ -1,4 +1,14 @@
-let quantidadeDeLetras = 0;
-let letraDigitada = "";
+let condicao = false;
+let palavra = "";
 
-while()
+while (condicao !== true) {
+    let character = prompt ("Digite uma letra: ");
+
+    if (character = " "){
+        condicao = true
+    }else {
+        palavra += character;
+    }
+}
+
+console.log("A palavra é: ", palavra);
