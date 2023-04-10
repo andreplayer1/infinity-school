@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Aula 4</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1 { 
+            text-align: center;
+            margin: auto;
+            width: 370px;
+            background-color: rgba(101, 235, 184, 0.363);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 7px black;
+            padding-bottom: 10px;
+        }
+        form {
+            width: 350px;
+            background-color: rgba(101, 235, 184, 0.363);
+            padding: 20px 0px 20px 20px;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 2px 2px 7px black;
+            margin: auto;
+        }
+
+        form > p {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        form > ul {
+            list-style: none;
+        }
+
+        .button {
+            padding: 5px;
+            font-weight: bold;
+            font-size: 11pt;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            font-size: 14pt;
+            text-shadow: 2px 2px 10px rgb(30, 34, 241);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Prova da Aula 4
+    </h1>
+
+    <form action="">
+        <p>Nome:</p> <input type="text" placeholder="Fabio"><br>
+        <p>Sobrenome:</p> <input type="text" placeholder="Alvarez"><br> 
+        <p>Idade:</p> <input type="number" placeholder="18"><br>
+        <p>Email:</p> <input type="email" placeholder="seu-email@email.com"><br><br>
+        
+        <p>Marque suas habilidades principais</p>
+        <ul>
+            <li>
+                <input type="checkbox"> AAA
+            </li>
+            <li>
+                <input type="checkbox">EEE
+            </li>
+            <li>
+                <input type="checkbox">III
+            </li>
+            <li>
+                <input type="checkbox">OOO
+            </li>
+            <li>
+                <input type="checkbox">UUU
+            </li>
+        </ul><br><br>
+
+        <p>Escolha uma Opção</p>
+        A<input type="radio" name="rad" ><br>
+        B<input type="radio" name="rad" ><br>
+        C<input type="radio" name="rad" ><br>
+        <input type="submit" value="Enviar" class="button">
+        <input type="reset" value="Limpar" class="button">
+    </form>
+</body>
+</html>
