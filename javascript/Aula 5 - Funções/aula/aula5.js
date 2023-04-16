@@ -1,10 +1,5 @@
-// Função é chamada e retorna um valor para x
+// let x = multiplicadorPor9()
 
-function myFunction(a, b) {
-a *= a;
-b *= b;
-let resultado = a * b; //variável local
-return resultado; // Função retorna o quadrado do produto de a e b
-a = 1; //Não é executado, está após o return
-}
-let x = myFunction(4, 3);
+// function multiplicadorPor9(numero){
+//     return 9 * numero;
+// } document.getElementById('demo').innerHTML = multiplicadorPor9(10)
