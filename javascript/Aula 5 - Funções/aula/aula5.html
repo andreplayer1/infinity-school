@@ -11,15 +11,12 @@
         Funções
     </h1>
 
-    <p>Um botão para chamar uma função</p>
-    <p id="demo1"></p>
-    <button id="btn" onclick="myFunction()">Botão</button>
-    <script>
+    Nome: <input type="text" id="entrada">
 
-    function myFunction() {
-    let carName = "Opala";
-    document.getElementById("demo1").innerHTML = carName;
-    }
-    </script>
+    <input type="button" value="Button" onclick="nome(document.querySelector('input#entrada').value)">
+
+    <p id="res"></p>
+    
+<script src="aula5.js"></script>
 </body>
 </html>
