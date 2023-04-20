@@ -1,3 +1,8 @@
+/*
+Implemente uma função que receba uma string como parâmetro e
+devolva a mesma invertida. Ex: “Noite” -> “etioN”
+*/
+
 function str(){
     let stri = document.querySelector('input#entrada').value;
 
