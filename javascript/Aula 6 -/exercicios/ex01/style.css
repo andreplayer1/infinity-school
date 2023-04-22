@@ -1,0 +1,37 @@
+div#retangulo {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1;
+}
+
+.button {
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 0px 10px 0px 10px;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+#cor1 {
+    background-color: red;
+    width: 50px;
+    display: inline-block;
+}
+#cor2 {
+    background-color: blue;
+    width: 50px;
+    display: inline-block;
+}
+#cor3 {
+    background-color: green;
+    width: 50px;
+    display: inline-block;
+}
+
+#retangulo {
+    font-weight: bolder;
+    margin: auto;
+    background-color: gray;
+    width: 200px;
+    padding: 30px;
+}
