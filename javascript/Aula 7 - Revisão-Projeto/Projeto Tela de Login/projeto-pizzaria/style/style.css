@@ -3,40 +3,52 @@
     padding: 0px;
 }
 
+:root {
+    --titulo1:#F61E19 ;
+    --titulo2: #D43615;
+    --background: #EA6123;
+    --fonte1: #F69E19;
+    --fonte2: #D46D15;
+}
+
 body {
-    background-image: linear-gradient(to top,rgba(46, 75, 3, 0.725), rgb(195, 218, 162),white);
+    background-image: url(../image/pizza4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header > nav {
     min-width: 320px;
-    max-width: 800px;
-    background-color: whitesmoke;
+    max-width: 100%;
+    background-color: #f61d19f1;
     padding: 20px;
 }
 
 nav a {
     min-width: 320px;
     max-width: 800px;
-    padding: 2px 5px 2px 5px;
-    color: rgb(81, 95, 60);
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 10px;
+    color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     transition: 0.5s;
     border-radius: 10px;
 }
 
 header a:hover {
     text-decoration: underline;
-    background-color: rgb(169, 224, 87);
+    background-color: var(--fonte1);
+    color: white;
 
 }
 
 header > h1 {
-    color: rgba(5, 243, 164, 0.76);
+    color: var(--titulo1);
     background-position: center right;
     font-size: 2em;
-    background-image: url("../image/pizza3.jpg");
-    background-size: cover;
+    background-image: linear-gradient(to right, var(--fonte1), white, var(--background));
+    background-size: 100%;
     padding: 60px;
     text-align: center;
 }
@@ -45,10 +57,12 @@ main {
     min-width: 320px;
     max-width: 800px;
     margin: auto;
-    background-color: rgba(199, 238, 195, 0.934);
+    background-color: #ea6223d7;
+    color: rgba(0, 0, 0, 0.724);
     padding: 0px 30px 50px 30px;
     border-radius: 10px;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.422);
+    margin-top: 5px;
     margin-bottom: 50px;
 }
 
@@ -58,6 +72,7 @@ main h2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 main p {
@@ -89,23 +104,24 @@ main img {
 }
 
 footer {
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
     font-weight: bold;
     text-align: center;
-    background-color: rgb(2, 26, 2);
+    background-color: #f61d19f1;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
 }
 
 footer  a {
     text-decoration: none;
-    color: rgba(174, 221, 156, 0.885);
+    color: white;
     padding: 5px;
     border-radius: 4px;
+    transition: 0.2s;
 }
 
 footer a:hover {
     text-decoration: underline;
-    background-color: rgba(46, 75, 3, 0.725);
+    background-color: var(--fonte1);
 }

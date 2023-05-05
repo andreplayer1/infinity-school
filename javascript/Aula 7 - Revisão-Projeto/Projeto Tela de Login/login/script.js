@@ -1,5 +1,5 @@
-let user = 'andre';
-let password = '1234';
+let user = 'admin';
+let password = 'admin';
 
 function login(){
 
