@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -47,6 +48,7 @@ header > h1 {
     color: var(--titulo1);
     background-position: center right;
     font-size: 2em;
+    font-family: 'Castoro Titling', cursive;
     background-image: linear-gradient(to right, var(--fonte1), white, var(--background));
     background-size: 100%;
     padding: 60px;
@@ -58,6 +60,8 @@ main {
     max-width: 800px;
     margin: auto;
     background-color: #ea6223d7;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgba(0, 0, 0, 0.724);
     padding: 0px 30px 50px 30px;
     border-radius: 10px;
