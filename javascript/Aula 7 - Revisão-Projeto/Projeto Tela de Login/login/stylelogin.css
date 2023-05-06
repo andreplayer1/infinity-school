@@ -44,7 +44,7 @@ div#login > label {
 
 #user, #password {
     padding: 5px 0px 5px 0px;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 7px 0px 1px 0px;
     color: white;
     font-size: 1.1em;
