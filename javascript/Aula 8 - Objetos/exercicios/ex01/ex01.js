@@ -1,23 +1,34 @@
+//Monte um array de objetos para atletas, contendo nome do atleta e esporte praticado. Em seguida, mostre as informações desse array na página.
+
+let container = document.getElementById('container')
 let atletas = [
-];
+    {
+        nome: 'Michael',
+        esporte: 'Volei'
+    },
 
-const mostrarAtletas = () => {
-    let html = '';
+    {
+        nome: 'Jhon',
+        esporte: 'Basketball'
+    },
 
-    for(let i = 0; i < atletas.length; i++) {
-        html += `
-        <div>
-            <p>
-                nome: ${atletas[i].nome}
-            </p>
-            <p>
-                esporte: ${atletas[i].esporte}
-            </p>
-        </div>
-        `;
+    {
+        nome: 'Ítalo',
+        esporte: 'Handball'
+    },
+
+    {
+        nome: 'Joana',
+        esporte: 'Football'
+    },
+
+    {
+        nome: 'Laís',
+        esporte: 'Natação'
     }
+]
 
-    return html;
+for(let i = 0; i < atletas.length; i++) {
+    container.innerHTML += `Nome: ${atletas[i].nome}<br>`
+    container.innerHTML += `Esporte: ${atletas[i].esporte}<br>`
 }
-
-document.getElementById("container").innerHTML = mostrarAtletas();
