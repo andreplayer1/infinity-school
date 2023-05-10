@@ -1,5 +1,6 @@
 //Crie uma estrutura que permita ao usuário adicionar atletas na lista do exercício anterior.
 
+let html = '';
 let container = document.getElementById('container');
 let atletas = [
     {
@@ -28,15 +29,18 @@ let atletas = [
     }
 ];
 
+let mostrarNaPagina;
+
 let exibir = ()=> {
-    
     for(let i = 0; i < atletas.length; i++) {
-        container.innerHTML += `Nome: ${atletas[i].nome}<br>`
-        container.innerHTML += `Esporte: ${atletas[i].esporte}<br>`
+        mostrarNaPagina += `Nome: ${atletas[i].nome}<br>`
+        mostrarNaPagina += `Esporte: ${atletas[i].esporte}<br>`
     };
+    container.innerHTML = mostrarNaPagina
 }
 
 let adicionar = ()=> {
+    mostrarNaPagina = html
     let nome = document.getElementById('nome').value;
     let esporte = document.getElementById('esporte').value;
     
@@ -44,7 +48,7 @@ let adicionar = ()=> {
         nome: nome,
         esporte: esporte
     };
-
     atletas.push(atleta)
+
     exibir()
 }
