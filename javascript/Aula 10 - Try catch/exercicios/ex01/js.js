@@ -1,32 +1,18 @@
-const formulario = document.forms["frm1"]
-function submeter() {
-    try {
-        const nome = formulario.elements.name.value
-        const cidade = formulario.elements.cidade.value
-        const total = formulario.elements.total.value
-        if(!nome || !cidade ||!total){
-            throw new Error ("Todos os campos precisam ser preenchidos")
-        }
-    } catch(Error) {
-        alert(Error.message)
-    }
+const formulario = document.forms["frm1"];
+const submeter = () =>{
 
-//     try {
-//         const cidade = formulario.elements.cidade.value
-//         if(!cidade){
-//             throw new Error ("Campo Cidade está vazio")
-//         }
-//     } catch (err) {
-//         alert (err.message)
-//     }
+    const nome = formulario.elements.name.value
+    const cidade = formulario.elements.cidade.value
+    const total = formulario.elements.total.value
 
-//     try {
-//         const total = formulario.elements.total.value
-//         if(!total){
-//             throw new Error ("Campo Total está vazio")
-//         }
-//         if(total )
-//     } catch (err) {
-//         alert (err.message)
-//     }
-// }
+    try{
+        if( !nome || !cidade ||!total ){
+            throw new Error ("Todos os campos precisam ser preenchidos!");
+        };
+        if(total <0){
+            throw new Error ("O valor não pode ser negativo!");
+        };
+    } catch(e) {
+        alert(e.message);
+    };
+};
