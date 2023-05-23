@@ -1,6 +1,7 @@
 const formulario = document.forms["frm1"];
 const submeter = () =>{
 
+    const res = document.getElementById('res')
     const nome = formulario.elements.name.value
     const cidade = formulario.elements.cidade.value
     const total = formulario.elements.total.value
@@ -12,6 +13,7 @@ const submeter = () =>{
         if(total <0){
             throw new Error ("O valor não pode ser negativo!");
         };
+        res.innerHTML = `Nome da Loja: ${nome} - Cidade: ${cidade} Total: ${total}`
     } catch(e) {
         alert(e.message);
     };
