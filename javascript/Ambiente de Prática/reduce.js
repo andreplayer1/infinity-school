@@ -10,3 +10,26 @@
 
 // const total = itens.reduce( (soma, itemAtual) => soma + itemAtual.quantity * itemAtual.price, 0 )
 // console.log(total)
+
+const names = ["Daniel", "Maria", "Marta", "Juca", "João", "Jéssica"]
+
+const namesCount = names.reduce( (count, nomeAtual) => {
+    const firsLetter = nomeAtual[0].toLocaleLowerCase()
+    if(count[firsLetter]){
+        count [firsLetter]++
+    } else {
+        count[firsLetter] = 1
+    }
+
+    return count
+}, {} )
+
+console.log(namesCount)
+
+const pessoas = [
+    {nome: 'Daniel', idade: 28},
+    {nome: 'Maria', idade:29},
+    {nome: 'Marta', idade: 29}
+]
+
+const porIdade = pessoas.reduce(() => {}, )
