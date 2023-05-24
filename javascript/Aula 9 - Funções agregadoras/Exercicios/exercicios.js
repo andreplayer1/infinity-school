@@ -45,3 +45,5 @@ const vendas = [
 //     return total + atual.preco
 // }, 0)
 // console.log(totalVendas)
+
+//Exercício 5: Mostre o total de desconto por categoria.
