@@ -1,6 +1,3 @@
-import usuario from "./cadastro";
-console.log(usuario.nome)
-
 let user = 'admin';
 let password = 'admin';
 
