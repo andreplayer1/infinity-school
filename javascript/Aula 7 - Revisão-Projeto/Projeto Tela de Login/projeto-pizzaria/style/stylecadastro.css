@@ -108,3 +108,10 @@ footer {
     color: var(--fonte1);
     padding-top: 30px;
 }
+
+#text-content{
+    color: white;
+    font-size: 1.1em;
+    background-color: black;
+    width: 330px;
+}

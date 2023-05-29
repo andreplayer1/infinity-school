@@ -129,3 +129,14 @@ footer a:hover {
     text-decoration: underline;
     background-color: var(--fonte1);
 }
+
+#login {
+    margin-right: 30px;
+}
+
+#login, #cadastro {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
