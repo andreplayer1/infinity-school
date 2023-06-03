@@ -17,9 +17,7 @@ const mostrarRacas = () => {
     fetch("https://dog.ceo/api/breeds/list/all")
     .then(racas => racas.json())
     .then(data => {
-        
         Object.keys(data.message).forEach({
-
         });
     })
 }
