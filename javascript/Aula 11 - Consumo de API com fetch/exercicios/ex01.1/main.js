@@ -2,7 +2,8 @@
 const mudarCao = document.querySelector("#mudar-cao");
 const bListarRacas = document.querySelector("#list-racas");
 const search = document.querySelector("#search");
-const imageContainer = document.querySelector("#image-container")
+const imageContainer = document.querySelector("#image-container");
+const errContent = document.querySelector("#catch-container");
 
 const randomPic = ()=>{
     const url = "http://dog.ceo/api/breeds/image/random"
