@@ -1,0 +1,19 @@
+.card_filme {
+    position: relative;
+    width: 150px;
+    height: 200px;   
+}
+
+.card_filme > p {
+    position: absolute;
+    bottom: 0;
+    background-color: beige;
+}
+.card_filme > img {
+    display: block;
+    width: 150px;
+}
+.containerFilmes {
+    display: flex;
+    gap: 16px;
+}
