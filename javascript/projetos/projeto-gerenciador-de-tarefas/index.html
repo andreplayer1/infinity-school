@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Taregas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="big-box">
+        <h1>Gerenciador de Tarefas</h1>
+        <p>Você ainda não adicionou nenhuma tarefa.
+            <br>clique no botão para começar!</p>
+        <form>
+            <button>Nova Tarefa</button>
+
+            <select name="tarefas" id="tarefas">
+                <option value="">Lembrete</option>
+                <option value="">Estudo</option>
+                <option value="">Lista de Compras</option>
+            </select><br>
+
+            <br><label for="title">Titulo</label>
+            <input type="text" id="title"><br>
+            <textarea name="description" id="description" cols="30" rows="10">Descrição</textarea><br>
+
+            <input type="date">
+            <input type="time">
+            <br>
+
+            <br><label for="assunto">Assunto</label>
+            <input type="text" id="assunto"><br>
+            <textarea name="description" id="description" cols="30" rows="10">Descrição</textarea><br>
+            
+            <input type="date">
+            <input type="time">
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
