@@ -1,0 +1,23 @@
+#name {
+  margin-top: 0px;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px 7px black;
+}
+
+.form {
+  border: 1px solid black;
+  font-weight: bolder;
+  padding: 10px 0px 10px 10px;
+}
+
+#perfil {
+  width: 200px;
+  height: 220px;
+}
+
+.exp {
+  padding-bottom: 15px;
+}
